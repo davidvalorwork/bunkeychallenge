@@ -1,0 +1,27 @@
+{
+  "name": "bunkeychallenge",
+  "version": "1.0.0",
+  "description": "Desafio requerido para continuar proceso de seleccion para el puesto Backend Developer de la empresa Bunkey",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidvalorwork/bunkeychallenge.git"
+  },
+  "keywords": [
+    "backend",
+    "developer",
+    "javascript",
+    "node",
+    "api",
+    "mongo"
+  ],
+  "author": "davidvalorwork@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidvalorwork/bunkeychallenge/issues"
+  },
+  "homepage": "https://github.com/davidvalorwork/bunkeychallenge#readme"
+}

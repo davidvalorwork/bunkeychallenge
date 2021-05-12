@@ -1,11 +1,10 @@
 // Importando configuraciones globales
-const environment = process.argv[2]!==undefined?process.argv[2]:'--dev' // Ambiente a utilizar: produccion, desarrollo, testing
-const config      = require("../config.json")[environment]
+const configs = require("../config.json")
 
 // Importando modulos 
 const express = require("express")
-const cors    = require("cors")
-const models  = require("./models")
+const mongo = require( "./models")
+const cors = require("cors")
 
 // Inicializando express
 const app = express()
@@ -15,8 +14,12 @@ app.use(cors({origin:"*"}))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
-// Inicializando modelos
-models(config.MONGO)
+// Configurando ambiente
+const environment = process.argv[2] !== undefined ? process.argv[2] : '--dev'
+const config = configs[environment]
+
+// Realizando conexion con mongo
+mongo(config.MONGO)
 
 // Inicializando rutas
 

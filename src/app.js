@@ -14,6 +14,8 @@ app.use(cors({origin:"*"}))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
+// Inicializando modelos
+
 // Inicializando rutas
 
 // Inicializando Servidor

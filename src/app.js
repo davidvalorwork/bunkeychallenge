@@ -3,8 +3,9 @@ const configs = require("../config.json")
 
 // Importando modulos 
 const express = require("express")
-const mongo = require( "./models")
-const cors = require("cors")
+const routes  = require("./routes")
+const mongo   = require( "./models")
+const cors    = require("cors")
 
 // Inicializando express
 const app = express()
@@ -22,6 +23,7 @@ const config = configs[environment]
 mongo(config.MONGO)
 
 // Inicializando rutas
+routes(app)
 
 // Inicializando Servidor
 app.listen(config.PORT,() => console.log(`Api listening at port ${config.PORT}`))

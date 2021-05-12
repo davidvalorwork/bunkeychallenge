@@ -47,7 +47,8 @@
 1. Crear modelos.
 2. Crear controladores.
   
-    
+  Controlador Login
+  Controlador Usuario    
 
 3. Crear rutas.
 4. Crear prueba unitaria.

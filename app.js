@@ -1,5 +1,6 @@
 // Importando configuraciones globales
-const config  = require("./config.json")[process.argvs[2]]
+const environment = process.argv[2]!==undefined?process.argv[2]:'--dev' // Ambiente a utilizar: produccion, desarrollo, testing
+const config      = require("./config.json")[environment]
 
 // Importando modulos 
 const express = require("express")
@@ -16,4 +17,4 @@ app.use(express.urlencoded({extended:false}))
 // Inicializando rutas
 
 // Inicializando Servidor
-app.listen(config.PORT,() => console.log(`App listening at port ${config.PORT}`))
+app.listen(config.PORT,() => console.log(`Api listening at port ${config.PORT}`))

@@ -1,11 +1,14 @@
 {
   "--dev":{
-    "PORT":3000
+    "PORT":3000,
+    "MONGO":"mongodb://localhost/bunkeychallenge"
   },
   "--test":{
-    "PORT":3000
+    "PORT":3000,
+    "MONGO":"mongodb://localhost/bunkeychallenge"
   },
   "--prod":{
-    "PORT":3000
+    "PORT":3000,
+    "MONGO":"mongodb://localhost/bunkeychallenge"
   }
 }

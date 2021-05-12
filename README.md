@@ -47,6 +47,7 @@
 1. Crear modelos.
 2. Crear controladores.
   
+  Controlador Registrar usuario, estoy por la parte de mandar error si el email es invalido o el password es invalido
   Controlador Login
   Controlador Usuario    
 
